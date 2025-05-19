@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc mừng sinh nhật Bi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Fredoka', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-top: 20px;
+      color: #ffde59;
+    }
+    .gallery img {
+      width: 80%;
+      max-width: 400px;
+      margin: 20px auto;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 222, 89, 0.5);
+    }
+    #giftBox {
+      display: none;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffde59;
+      color: black;
+      border-radius: 10px;
+      font-size: 1.2em;
+      width: fit-content;
+      animation: pop 0.5s ease-in-out;
+    }
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffde59;
+      color: black;
+      cursor: pointer;
+    }
+    #musicIcon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 2em;
+      z-index: 1000;
+    }
+    .sticker {
+      position: fixed;
+      width: 80px;
+      opacity: 0.8;
+      z-index: 1;
+    }
+    .sticker1 { top: 10%; left: 5%; transform: rotate(-15deg); }
+    .sticker2 { bottom: 10%; right: 5%; transform: rotate(10deg); }
+  </style>
+</head>
+<body>
+  <div id="musicIcon">🎵</div>
+  <h1>CHÚC MỪNG SINH NHẬT BI</h1>
+
+  <div class="gallery">
+    <img src="DEA83788-9875-4839-AECD-0BDEB5539E8E.jpeg" alt="Ảnh 1">
+    <img src="B20B78D9-E32D-4B99-B137-D12C9F9614AB.jpeg" alt="Ảnh 2">
+    <img src="0EE98826-15C4-42FC-BB0F-7053DF81A99C.jpeg" alt="Ảnh 3">
+    <img src="8FCAE40D-C04F-4F13-803E-105383201389.jpeg" alt="Ảnh 4">
+  </div>
+
+  <p style="margin: 30px 20px; font-size: 1.2em;">
+    Tuổi mới em chúc bi béo dễ thương, vui vẻ, mạnh phẻ, thành công rực rỡ dà iu em hì hì,<br>
+    <b>NHỚ CHẠY XE ĐÀNG QUÀNG</b>
+  </p>
+
+  <button onclick="showGift()">Bấm vào đây nè</button>
+
+  <div id="giftBox">🎁 Hun em sẽ có quà (bắt buộc thực hiện) 🎁</div>
+
+  <img src="0EE98826-15C4-42FC-BB0F-7053DF81A99C.jpeg" class="sticker sticker1" />
+  <img src="8FCAE40D-C04F-4F13-803E-105383201389.jpeg" class="sticker sticker2" />
+
+  <audio autoplay loop>
+    <source src="iLoveYt.net_YouTube_Guns-N-Roses-Sweet-Child-O-Mine-Official_Media_1w7OgIMMRc4_002_720p.mp4" type="audio/mp4">
+  </audio>
+
+  <script>
+    function showGift() {
+      document.getElementById("giftBox").style.display = "block";
+    }
+  </script>
+</body>
+</html>
